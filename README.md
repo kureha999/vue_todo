@@ -37,3 +37,34 @@ $ npm create vue@latest
 localStorege("message", "ローカルストレージに保存");
 ```
 > ローカルストレージの状態は、検証ツールの[Application]タグで確認
+
+
+### 補足
+create-vueだけでは、必要なパッケージを ***package.json*** に羅列しただけなのでinstallしないといけない
+installされはパッケージは、 ***node_module*** に入る。
+```
+npm install
+```
+起動の仕方
+```
+npm run dev
+```
+開発が終わってリリースするときにする(distフォルダを作成)
+```
+npm run build
+```
+distフルダが正しく動いているか確かめる
+```
+npm run preview
+```
+
+コードを修正してくれる
+```
+npm run lint
+```
+コードを綺麗にフォーマットしてくれる
+```
+npm run prrita
+```
+
+
