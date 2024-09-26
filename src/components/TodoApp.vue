@@ -1,10 +1,10 @@
 <script setup>
-import TodoInput from './TodoInput.vue'
-import TodoListView from './TodoListView.vue'
+import TodoInput from './TodoInput.vue';
+import TodoListView from './TodoListView.vue';
 </script>
 
 <template>
-  <div class="todoApp">
+  <div>
     <TodoInput></TodoInput>
     <TodoListView></TodoListView>
   </div>
