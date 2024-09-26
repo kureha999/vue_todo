@@ -1,36 +1,39 @@
-# vue_todo
+# Start!
+``` bash:bash
+$ npm create vue@latest
 
-This template should help get you started developing with Vue 3 in Vite.
-
-## Recommended IDE Setup
-
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
+✔ Project name: … vue_todo
+✔ Add TypeScript? … No / Yes
+✔ Add JSX Support? … No / Yes
+✔ Add Vue Router for Single Page Application development? … No / Yes
+✔ Add Pinia for state management? … No / Yes
+✔ Add Vitest for Unit Testing? … No / Yes
+✔ Add an End-to-End Testing Solution? › No
+✔ Add ESLint for code quality? … No / Yes
+✔ Add Prettier for code formatting? … No / Yes
+✔ Add Vue DevTools 7 extension for debugging? (experimental) … No / Yes
 ```
 
-### Compile and Hot-Reload for Development
 
-```sh
-npm run dev
+# 概要
+### TODO-appの作成
+###### 機能
+* タスクの追加(内容,期限を入力)
+* タスクの編集(内容,期限,ステータスを編集できる)
+* タスクの削除(一個ずつ選んで消せる)
+
+###### タスクの保存先
+> 今回は、ローカルストレージを使用する。
+* ローカルストレージとは、ブラウザ上にデータを保存する方法。
+* データベースを用意しないでデータを操作できる。
+* [key]と[value]の組み合わせで文字列を保存できる
+> 今回の様に配列やオブジェクトを扱うには、JSONデータとして文字列に変換する必要がある。
+
+* データを取得 - getItem(key)
+* データを保存 - setItem(key,value)
+* データを削除 - removeItem(key)
 ```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
+例)
+localStorege("message", "ローカルストレージに保存");
 ```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
-# vue_todo
+> ローカルストレージの状態は、検証ツールの[Application]タグで確認
